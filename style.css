@@ -1,0 +1,7 @@
+.ProfileImage:hover {
+    border-radius: 100px;
+    transform: skew(30deg, 20deg);
+}
+.title:hover {
+    transform: skew(30deg, 20deg);
+}
