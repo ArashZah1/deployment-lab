@@ -5,6 +5,8 @@ const path = require('path') //path is a package
 
 app.use(express.static(path.join(__dirname, '/public')))
 
+app.use("/style", express.static(path.join(__dirname, 'public/style.css')))
+
 app.get('/', function(req, res){
     res.sendFile( path.join(__dirname, '../aboutme.html') )
 })
