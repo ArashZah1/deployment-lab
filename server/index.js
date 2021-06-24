@@ -5,7 +5,6 @@ const path = require('path') //path is a package
 
 app.get('/', function(req, res){
     res.sendFile( path.join(__dirname, '../aboutme.html') )
-    res.sendFile(path.join(__dirname, '../style.css') )
 })
 
 
