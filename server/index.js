@@ -5,8 +5,9 @@ const path = require('path') //path is a package
 
 app.get('/', function(req, res){
     res.sendFile( path.join(__dirname, '../aboutme.html') )
+    res.sendFile(path.join(__dirname, '../style.css') )
 })
-app.use(express.static(__dirname));
+
 
 
 const port = process.env.PORT || 5000
